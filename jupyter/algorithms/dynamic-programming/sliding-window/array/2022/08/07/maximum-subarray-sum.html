@@ -10,17 +10,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Five different algorithms to solve the maximum sum subarray problem." />
 <meta property="og:description" content="Five different algorithms to solve the maximum sum subarray problem." />
-<link rel="canonical" href="https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/06/_08_07_maximum_subarray_sum.html" />
-<meta property="og:url" content="https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/06/_08_07_maximum_subarray_sum.html" />
+<link rel="canonical" href="https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/07/maximum-subarray-sum.html" />
+<meta property="og:url" content="https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/07/maximum-subarray-sum.html" />
 <meta property="og:site_name" content="Algorithmic Mutterings" />
 <meta property="og:image" content="https://ez2rok.github.io/algorithmic-mutterings/images/some_folder/your_image.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-06T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-08-07T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ez2rok.github.io/algorithmic-mutterings/images/some_folder/your_image.png" />
 <meta property="twitter:title" content="The Maximum Sum Subarray Problem" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-06T00:00:00-05:00","datePublished":"2022-08-06T00:00:00-05:00","description":"Five different algorithms to solve the maximum sum subarray problem.","headline":"The Maximum Sum Subarray Problem","image":"https://ez2rok.github.io/algorithmic-mutterings/images/some_folder/your_image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/06/_08_07_maximum_subarray_sum.html"},"url":"https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/06/_08_07_maximum_subarray_sum.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-07T00:00:00-05:00","datePublished":"2022-08-07T00:00:00-05:00","description":"Five different algorithms to solve the maximum sum subarray problem.","headline":"The Maximum Sum Subarray Problem","image":"https://ez2rok.github.io/algorithmic-mutterings/images/some_folder/your_image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/07/maximum-subarray-sum.html"},"url":"https://ez2rok.github.io/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/07/maximum-subarray-sum.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/algorithmic-mutterings/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ez2rok.github.io/algorithmic-mutterings/feed.xml" title="Algorithmic Mutterings" /><link rel="shortcut icon" type="image/x-icon" href="/algorithmic-mutterings/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -91,8 +91,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">The Maximum Sum Subarray Problem</h1><p class="page-description">Five different algorithms to solve the maximum sum subarray problem.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-06T00:00:00-05:00" itemprop="datePublished">
-        Aug 6, 2022
+    <h1 class="post-title p-name" itemprop="name headline">The Maximum Sum Subarray Problem</h1><p class="page-description">Five different algorithms to solve the maximum sum subarray problem.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-07T00:00:00-05:00" itemprop="datePublished">
+        Aug 7, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -127,24 +127,24 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-justify-center">
           <div class="px-2">
 
-    <a href="https://github.com/ez2rok/algorithmic-mutterings/tree/master/_notebooks/2022_08_07_maximum_subarray_sum.ipynb" role="button" target="_blank">
+    <a href="https://github.com/ez2rok/algorithmic-mutterings/tree/master/_notebooks/2022-08-07-maximum-subarray-sum.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/algorithmic-mutterings/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/ez2rok/algorithmic-mutterings/master?filepath=_notebooks%2F2022_08_07_maximum_subarray_sum.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/ez2rok/algorithmic-mutterings/master?filepath=_notebooks%2F2022-08-07-maximum-subarray-sum.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/algorithmic-mutterings/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/ez2rok/algorithmic-mutterings/blob/master/_notebooks/2022_08_07_maximum_subarray_sum.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/ez2rok/algorithmic-mutterings/blob/master/_notebooks/2022-08-07-maximum-subarray-sum.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/algorithmic-mutterings/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
           <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fez2rok%2Falgorithmic-mutterings%2Fblob%2Fmaster%2F_notebooks%2F2022_08_07_maximum_subarray_sum.ipynb" target="_blank">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fez2rok%2Falgorithmic-mutterings%2Fblob%2Fmaster%2F_notebooks%2F2022-08-07-maximum-subarray-sum.ipynb" target="_blank">
       <img class="notebook-badge-image" src="/algorithmic-mutterings/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
   </a>
 </div>
@@ -167,7 +167,7 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2022_08_07_maximum_subarray_sum.ipynb
+# file to edit: _notebooks/2022-08-07-maximum-subarray-sum.ipynb
 -->
 
 <div class="container" id="notebook-container">
@@ -855,7 +855,7 @@ but the divide and conquer technique can be expressed by the recurrence relation
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/06/_08_07_maximum_subarray_sum.html" hidden></a>
+</script><a class="u-url" href="/algorithmic-mutterings/jupyter/algorithms/dynamic-programming/sliding-window/array/2022/08/07/maximum-subarray-sum.html" hidden></a>
 </article>
 
       </div>
